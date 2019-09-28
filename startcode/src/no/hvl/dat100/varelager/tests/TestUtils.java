@@ -37,12 +37,12 @@ class TestUtils {
 	}
 
 	@Test
-	void testfinnPriser() {
-		
-		int[] numre = {0,1,2};
-		
-		assertTrue(Arrays.equals(numre,VarelagerUtils.finnVarenr(varetab)));
-	}
+    	void testfinnPriser() {
+
+        	double[] priser = {1,7,42};
+
+        	assertArrayEquals(priser, VarelagerUtils.finnPriser(varetab));
+    	}
 	
 	@Test
 	void testfinnPrisDifferanser() {
